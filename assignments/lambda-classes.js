@@ -1,4 +1,4 @@
-// CODE here for your Lambda Classes
+/// begin Class'///
 class Person{
     constructor(atts){
     this.name= atts.name;
@@ -23,7 +23,7 @@ class Instructor extends Person{
     };
 
     grade(){
-        console.log(`${Student} Recieves a perfect grade on ${subject}`)
+        console.log(`${this.name} Recieves a perfect grade on ${this.subject}`)
 
     };
 }
@@ -39,11 +39,12 @@ class Student extends Person{
         console.log(`${this.favSubjects}`)
     };
     PRAssignment(){
+        console.log(`${this.name} has submitted a PR for ${this.subject}`)
 
     };
 
     sprintChallenge(){
-
+        console.log(`${this.name} has begun sprint challenge on ${this.subject}`)
     };
     
 }
@@ -56,12 +57,13 @@ class ProjectManager extends Instructor{
     }
     standUp(){
 
-    };
-    debugsCode(){
 
     };
+    debugsCode(){
+        console.log(`${this.name} debugs ${Student.name}'s code on ${this.subject}`)
+    };
 }
-///////////////////End Class////////////////
+///////////////////End Class'////////////////
 const fred = new Instructor({
     name: 'Fred',
     location: 'Bedrock',
