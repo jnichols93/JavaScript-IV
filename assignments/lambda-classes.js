@@ -56,8 +56,7 @@ class ProjectManager extends Instructor{
         this.favInstructor = pmstats.favInstructor;
     }
     standUp(){
-
-
+        
     };
     debugsCode(){
         console.log(`${this.name} debugs ${Student.name}'s code on ${this.subject}`)
@@ -102,4 +101,7 @@ const fred = new Instructor({
   });
   /////End objects
 
-  fred.speak(justin)
+  fred.speak(justin);
+  justin.speak(fred);
+  justin.listSubjects();
+  coco.favSubjects();
