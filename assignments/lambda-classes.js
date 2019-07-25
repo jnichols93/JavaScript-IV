@@ -13,7 +13,7 @@ class Person{
 
 class Instructor extends Person{
     constructor(insAtts){
-        super(insAtts);
+        super (insAtts);
         this.specialty = insAtts.specialty;
         this.favLanguage = insAtts.favLanguage;
         this.catchphrase = insAtts.catchphrase;
@@ -30,7 +30,7 @@ class Instructor extends Person{
 
 class Student extends Person{
     constructor(stuAtss){
-        super(stuAtss);
+        super (stuAtss);
         this.previousBackground = stuAtss.previousBackground;
         this.className=stuAtss.className;
         this.favSubjects=stuAtss.favSubjects;
@@ -50,8 +50,8 @@ class Student extends Person{
 }
 
 class ProjectManager extends Instructor{
-    cunstructor(pmstats){
-        super(pmstats);
+    constructor(pmstats){
+        super (pmstats);
         this.gradClassName = pmstats.gradClassName;
         this.favInstructor = pmstats.favInstructor;
     }
@@ -101,3 +101,5 @@ const fred = new Instructor({
     favInstructor: 'Britt'
   });
   /////End objects
+
+  fred.speak(justin)
